@@ -1,4 +1,6 @@
-# put your code here.
+from sys import argv
+
+
 def count_words(file_name):
     """Given a file, outputs a frequency count for each count (dictionary)."""
 
@@ -34,6 +36,4 @@ def remove_punctuation(word):
 
     return word
 
-
-count_words('twain.txt')
-# count_words('test.txt')
+count_words(argv[1])
